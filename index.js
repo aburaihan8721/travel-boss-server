@@ -60,7 +60,7 @@ run().catch(console.dir);
 
 // initial get
 app.get("/", (req, res) => {
-  res.send("Hello World Server trying to deploy!");
+  res.send("Hello World!");
 });
 
 app.listen(port, () => {
