@@ -46,7 +46,7 @@ async function run() {
     });
 
     // POST API
-    app.post("https://safe-tor-64824.herokuapp.com/packages", async (req, res) => {
+    app.post("/packages", async (req, res) => {
       const package = req.body;
       const result = await packagesCollection.insertOne(package);
       // console.log(result);
